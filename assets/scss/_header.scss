@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    text-decoration: none;
+    user-select: none;
+}
+
+body{
+    font-family: 'roboto';
+}
+
+header{
+    background-image: url("../images/Backgrounds/BackgroundTest.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #FBFB06;
+
+    nav{
+        background-image: url("../images/Backgrounds/depositphotos_271697982-stock-photo-abstract-black-and-dark-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FBFB06;
+        font-size: xx-large;
+        font-weight: bold;
+        border-bottom: 1px solid #FBFB06;
+        overflow: visible;
+        position: fixed;
+        z-index: 3;
+
+        >.alluraf{
+            font-family: "marker";
+            font-size: x-large;
+        }
+
+        .bigname{
+            margin-left: 70px;
+        }
+        
+    
+        >img{
+            z-index: 1;
+            width: 73px;
+            height: 73px;
+            border-radius: 100%;
+            animation-name: logo;
+            animation-duration: 8s;
+            animation-iteration-count: initial;
+            border: 1px solid #FBFB06;
+        }
+
+        @keyframes logo {
+
+    
+            75%{
+                transform: translateY(70px);
+                width: 200px;
+                height: 200px;
+            }
+            
+        }
+
+
+        .burger{
+
+            display: none;
+
+            .fa-list{
+                color: #FBFB06;
+            }
+            
+        }
+
+        ul{
+            width: 30%;
+            display: none;
+            height: 150%;
+            // display: flex;
+            align-items: center;
+            justify-content: space-around;
+            // animation-name: replinav;
+            // animation-delay: 8s;
+            // animation-duration: 8s;
+            cursor: pointer;
+
+            li{
+                border-right: 1px solid #FBFB06;
+                font-size: 14px;
+            }
+
+            a{
+                color: white;
+                // animation-name: replinav;
+                // animation-delay: 8s;
+                // animation-duration: 8s;
+            }
+
+            .projetli{
+                display: block;
+                position: absolute;
+                height: auto;
+
+                .liblock{
+                    // position: absolute;
+                    display: none;
+                }
+            }
+
+            #ulprojets{
+                // height: 50px;
+                width: auto;
+            }
+         
+        }
+
+        @keyframes replinav {
+            
+            0%{
+                width: 40%;
+                color:  yellow;
+            }
+
+            25%{
+                width: 30%;
+                color:orange;
+            }
+
+            50%{
+                width: 20%;
+                color: orangered;
+            }
+
+            75%{
+                width: 15%;
+                color: red;
+            }
+            100%{
+                width: 50%;
+                color: red;
+            }
+            
+        }
+    }
+
+    >div:nth-child(2){
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        width: auto;
+        height: 65%;
+        overflow: visible;
+
+        >div:nth-child(1){
+            
+            background-image: url("../images/Backgrounds/depositphotos_271697982-stock-photo-abstract-black-and-dark-background.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            height: 5%;
+            width: 150px;
+            border: 1px solid #FBFB06;
+            animation-name: rotate35;
+            animation-duration: 8s;
+            // box-shadow: 2px 2px #FBFB06;
+
+            >p{
+                animation-name: rotatep1;
+                animation-duration: 8s;
+            }
+        }
+
+        @keyframes rotatep1 {
+            53%{
+                transform: rotate(-40deg);
+            }
+        }
+
+        @keyframes rotate35 {
+            
+            35%{
+                transform: rotate(40deg);
+            }
+
+            40%{
+                transform: translateX(120px);
+            }
+
+            80%{
+                transform: translateX(120px);
+            }
+        }
+
+        >div:nth-child(2){
+            
+            background-image: url("../images/Backgrounds/depositphotos_271697982-stock-photo-abstract-black-and-dark-background.jpg");
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+            color: white;
+            font-size: 22px;
+            width: 30%;
+            padding: 30px;
+            word-spacing: 4px;
+            border: 1px solid #FBFB06;
+            animation-name: rotate50;
+            animation-duration: 8s;
+            overflow: visible;
+            z-index: 1;
+            // box-shadow: 2px 2px #FBFB06;
+
+            >p{
+                animation-name: rotatep;
+                animation-duration: 8s;
+            }
+        }
+
+        @keyframes rotate50 {
+            
+            73%{
+                transform: rotate(50deg);
+                background-image: url('../images/Backgrounds/34226189.jpg');
+            }
+        }
+
+        @keyframes rotatep {
+            
+            73%{
+                transform: rotate(-50deg);
+                background-image: url('../images/Backgrounds/34226189.jpg');
+            }
+        }
+
+
+        >p:nth-child(3){
+            
+            color: #FBFB06;
+            font-size: xx-large;
+            animation-name: letgo;
+            overflow: visible;
+            animation-duration: 8s;
+            z-index: 0;
+            cursor: pointer;
+            font-family: "marker";
+        
+        }
+
+        @keyframes letgo{
+            
+            0%{
+                font-size: 0px;
+            }
+            20%{
+                transform: translateX(-900px) translateY(-1000px) rotate(-360deg);
+                font-size: 0px;
+            }
+            40%{
+                transform: translateX(-900px) rotate(180deg);
+            }
+            60%{
+                transform: translateX(-300px) rotate(-360deg);
+                color: yellow;
+                font-size: 40px;
+                letter-spacing: 20px;
+            }
+            
+            100%{
+                transform: rotate(-90deg);
+                color: red;
+                letter-spacing: -10px;
+            }
+        
+        }
+    }
+
+    
+}
+
+
+
+
+

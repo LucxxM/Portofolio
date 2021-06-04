@@ -1,0 +1,186 @@
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/Backgrounds/BackgroundTest.jpg');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+
+    >div:nth-child(1){
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        >p:nth-child(1){
+            color: #FBFB06;
+            font-size: 32px;
+            border-bottom: 1px solid #FBFB06;
+            font-family: "marker";
+        }
+    }
+    >div:nth-child(2){
+
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 60%;
+            width: 40%;
+            background-image: url("../images/Backgrounds/depositphotos_271697982-stock-photo-abstract-black-and-dark-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px solid  #FBFB06;
+            // box-shadow: 3px 3px #FBFB06;
+
+
+            >div:nth-child(1){
+                height: 30%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+                justify-content: space-evenly;
+                align-items: flex-start;
+
+                >input{
+                    margin-left: 20px;
+                    height: 30%;
+                    width: 60%;
+                    color: white;
+                    font-size: 15px;
+                    padding: 3px;
+                    background-color: rgb(3, 3, 3);
+                    border-radius: 5px;
+                    border: 1px solid  #FBFB06;
+                    // box-shadow: 1px 1px #FBFB06;
+                }
+            }
+
+            >div:nth-child(2){
+                height: 80%;
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                >textarea{
+                    width: 80%;
+                    height: 70%;
+                    color: white;
+                    font-size: 15px;
+                    margin-left: 1em;
+                    padding: 3px;
+                    background-color: rgb(3, 3, 3);
+                    border: 1px solid  #FBFB06;
+                    // box-shadow: 1px 1px #FBFB06;
+                    border-radius: 5px;
+                }
+                >div{
+                    margin-left: 1em;
+                    height: 30px;
+                    width: 100px;
+                    color: white;
+                    display: flex;
+                    position: absolute;
+                    top: 247px;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid  #FBFB06;
+                    box-shadow: 3px 3px #FBFB06;
+                }
+                >.btnenvoi:hover{
+                    
+                    box-shadow: 1px 1px orange;
+                }
+            }
+        }
+
+    }
+
+    >div:nth-child(3){
+
+        height: 10%;
+        color: white;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url('../images/Backgrounds/depositphotos_271697982-stock-photo-abstract-black-and-dark-background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 1px solid #FBFB06;
+        position: absolute;
+        top: 972px;
+
+
+        >div:nth-child(1){
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 70%;
+            height: 100%;
+            
+            text-align: center;
+
+            >p{
+                font-size: 15px;
+                width: 15%;
+                border-right: 1px solid #FBFB06;
+            }
+            >img{
+
+                width: 50px;
+                height: 50px;
+                border: 1px solid #FBFB06;
+                box-shadow: 2px 2px #FBFB06;
+            }
+
+        }
+
+        >div:nth-child(2){
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 20%;
+            height: 100%;
+
+
+
+             
+            >div{
+
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background-color: gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: xx-large;
+                border: 1px solid #FBFB06;
+            }
+
+            
+        }
+        
+       
+    }
+}
